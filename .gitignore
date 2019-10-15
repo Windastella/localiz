@@ -1,3 +1,4 @@
 *.csv
+locale.json
 
 node_modules/

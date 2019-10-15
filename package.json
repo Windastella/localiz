@@ -1,5 +1,5 @@
 {
-  "name": "localiz",
+  "name": "@windastella/localiz",
   "version": "1.0.0",
   "description": "Simple localization package",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "react"
   ],
   "author": "Nik Mirza",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {},
   "dependencies": {
     "commander": "^3.0.2"

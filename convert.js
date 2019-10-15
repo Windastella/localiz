@@ -8,6 +8,7 @@ program.version(app.version);
 
 program
     .option('-f, --file <csv>', 'csv file to convert to json', 'locale.csv')
+    .option('-o, --output <json>', 'json file output', 'locale.json')
     .parse(process.argv);
 
 let content = fs.readFileSync( program.file, 'utf8');
@@ -27,7 +28,9 @@ for(line of lines){
     }
 }
 
-fs.writeFile("locale.json", JSON.stringify(json), 'utf8', (err)=>{
+fs.writeFile(program.output, JSON.stringify(json), 'utf8', (err)=>{
     if(err)
         console.error(err);
+    else
+        console.log(`Localization saved to ${program.output}`);
 });

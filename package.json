@@ -4,9 +4,9 @@
   "description": "Simple localization package",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "convert": "node ./convert.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin" : { "localiz-cli" : "./cconvert.js" },
   "keywords": [
     "localization",
     "react-native",

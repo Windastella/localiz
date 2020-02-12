@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin" : { "localiz-cli" : "./cconvert.js" },
+  "bin" : { "localiz-cli" : "./convert.js" },
   "keywords": [
     "localization",
     "react-native",
